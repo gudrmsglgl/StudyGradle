@@ -59,3 +59,6 @@ outTmp/
 kotlin-ide/
 .kotlin/
 .teamcity/
+/.idea/runConfigurations.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
