@@ -7,21 +7,5 @@ java {
 }
 
 tasks.withType<JavaCompile>().configureEach {
-
-}
-
-tasks.named<JavaCompile>("compileJava") { // == tasks.compileJava { }
-
-}
-
-tasks.compileTestJava {
-
-}
-
-tasks.test {
-
-}
-
-tasks.javadoc {
-
+    options.encoding = "UTF-8"
 }
