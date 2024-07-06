@@ -1,4 +1,5 @@
 import com.example.gradle.JarCount
+import gradle.kotlin.dsl.accessors._e8b683809be5525aec317ee21c75fdd6.build
 
 plugins {
     id("application")
@@ -21,4 +22,15 @@ tasks.register<Jar>("bundle") {
     from(configurations.runtimeClasspath)
 
     destinationDirectory.set(layout.buildDirectory.dir("jarDistribution"))
+}
+
+tasks.build {
+    dependsOn(tasks.named("bundle"))
+}
+
+tasks.register("buildAll") {
+    description = "Builds even more!"
+
+    dependsOn(tasks.build)
+    dependsOn(tasks.named("countJar"))
 }
