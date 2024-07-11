@@ -19,6 +19,7 @@ dependencyResolutionManagement {
 //    }
 
 //    includeBuild("../my-other-project")
+    includeBuild("gradle/platform")
 }
 include("app")
 include("business-logic")
