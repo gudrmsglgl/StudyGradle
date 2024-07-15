@@ -6,7 +6,7 @@ group = "com.example"
 
 javaPlatform.allowDependencies()
 dependencies {
-
+    api(platform("org.junit:junit-bom:5.8.2"))
 }
 
 dependencies.constraints {
