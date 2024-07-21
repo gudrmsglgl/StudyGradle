@@ -12,5 +12,6 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 
-    integrationTestImplementation("")
+    integrationTestImplementation("org.junit.jupiter:junit-jupiter-api")
+    integrationTestRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
